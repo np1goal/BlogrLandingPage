@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="first-section">
+  <svg class="intro-pattern" viewBox="0 0 200 200">
+    <image width="200" height="200" xlink:href="images/bg-pattern-intro.svg"/>
+  </svg>
+  <div class="responsive-menu" id="responsive-menu">
+    <details onclick="closeAll(thisindex(this));">
+      <summary>Product&nbsp;&nbsp;<img src="images/icon-arrow-dark.svg"></summary>
+      <div>
+        <a>Overview</a>
+        <a>Pricing</a>
+        <a>Marketplace</a>
+        <a>Features</a>
+        <a>Integrations</a>
+      </div>
+    </details>
+    <details onclick="closeAll(thisindex(this));">
+      <summary>Company&nbsp;&nbsp;<img src="images/icon-arrow-dark.svg"></summary>
+      <div>
+        <a>About</a>
+        <a>Team</a>
+        <a>Blog</a>
+        <a>Careers</a>
+      </div>
+    </details>
+    <details onclick="closeAll(thisindex(this));">
+      <summary>Connect&nbsp;&nbsp;<img src="images/icon-arrow-dark.svg"></summary>
+      <div>
+        <a>Contact</a>
+        <a>Newsletter</a>
+        <a>LinkedIn</a>
+      </div>
+    </details>
+    <hr>
+    <button class="transparent-button login-responsive-menu"><b>Login</b></button>
+    <button class="signup-responsive-menu"><b>Sign Up</b></button>
+  </div>
+  <nav>
+    <object class="logo" data="images/logo.svg" type="image/svg+xml"></object>
+    <div class="dropdown">
+      <button class="nav-button">Product <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg></button>
+      <div class="dropdown-list">
+        <a>Overview</a>
+        <a>Pricing</a>
+        <a>Marketplace</a>
+        <a>Features</a>
+        <a>Integrations</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="nav-button">Company <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg></button>
+      <div class="dropdown-list">
+        <a>About</a>
+        <a>Team</a>
+        <a>Blog</a>
+        <a>Careers</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="nav-button">Connect <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg></button>
+      <div class="dropdown-list">
+        <a>Contact</a>
+        <a>Newsletter</a>
+        <a>LinkedIn</a>
+      </div>
+    </div>
+    <div class="login-signup">  
+      <button class="white-button signup-button"><b>Sign Up</b></button>
+      <button class="transparent-button login-button">Login</button>
+    </div>
+    <div class="menu"><img class="menu-image" id="menu-hamburger" onclick="openMenu()" src="images/icon-hamburger.svg"></div>
+  </nav>
+  <article>
+    <h1>A modern publishing platform</h1>
+    <h4>Grow your audience and build your online brand</h4>
+    <div>
+        <div>
+            <button class="white-button start-free-button"><b>Start for Free</b></button> 
+            <button class="transparent-button learn-more-button">Learn More</button>
+        </div>
+    </div>
+  </article>
+</section>
+<section class="second-section">
+  <article>
+    <h1>Designed for the future</h1>
+    <div class="second-section-body">
+      <div class="second-section-text">
+        <h2>Introducing an extensible editor</h2>
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+        <h2>Robust content management</h2>
+        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      </div>
+      <div class="second-section-svg">
+        <svg class="circles-pattern-desktop" viewBox="0 0 200 200">
+          <image width="200" height="200" xlink:href="images/illustration-editor-desktop.svg"/>
+        </svg>
+        <svg class="circles-pattern-mobile" viewBox="0 0 250 200">
+          <image width="250" height="200" xlink:href="images/illustration-editor-mobile.svg"/>
+        </svg>
+      </div>
+    </div>
+  </article>
+</section>
+<section class="third-section">
+  <div class="circles-container">
+    <svg class="circles-pattern" viewBox="0 0 200 200">
+      <image width="200" height="200" xlink:href="images/bg-pattern-circles.svg"/>
+    </svg>
+  </div>
+  <svg class="phones-svg" viewBox="0 0 200 200">
+    <image width="200" height="200" xlink:href="images/illustration-phones.svg"/>
+  </svg>
+  <div class="third-section-text">
+    <h1>State of the Art Infrastructure</h1>
+    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+  </div>
+</section>
+<section class="fourth-section">
+  <article>
+    <div class="fourth-section-svg">
+      <svg class="laptop-desktop" viewBox="0 0 250 200">
+        <image width="250" height="200" xlink:href="images/illustration-laptop-desktop.svg"/>
+      </svg>
+      <svg class="laptop-mobile" viewBox="0 0 250 180">
+        <image width="250" height="180" xlink:href="images/illustration-laptop-mobile.svg"/>
+      </svg>
+    </div>
+    <div class="fourth-section-text">
+      <h2>Free, open, simple</h2>
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      <h2>Powerful tooling</h2>
+      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+    </div>
+  </article>
+</section>
+<footer>
+  <div><object class="footer-logo" data="images/logo.svg" type="image/svg+xml"></object></div>
+  <div class="footer-links-div first-footer-links-div">
+    <h4>Product</h4>
+    <ul>
+      <li>Overview</li>
+      <li>Pricing</li>
+      <li>Marketplace</li>
+      <li>Features</li>
+      <li>Integrations</li>
+    </ul>
+  </div>
+  <div class="footer-links-div">
+    <h4>Company</h4>
+    <ul>
+      <li>About</li>
+      <li>Team</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+  <div class="footer-links-div">
+    <h4>Connect</h4>
+    <ul>
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+    </ul>
+  </div>
+</footer>
+<!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+  <script>
+    let responsiveMenu = false;
+    function openMenu() {
+      if(responsiveMenu === false) {
+        responsiveMenu = true
+        document.getElementById('menu-hamburger').src = 'images/icon-close.svg';
+        document.getElementById('responsive-menu').style.display = 'flex';
+      } else {
+        responsiveMenu = false
+        document.getElementById('menu-hamburger').src = 'images/icon-hamburger.svg';
+        document.getElementById('responsive-menu').style.display = 'none';
+      }
+    }
+
+    function thisindex(element){
+      let nodes = element.parentNode.childNodes, node;
+      let i = 0, count = i;
+      while( (node=nodes.item(i++)) && node!=element )
+        if( node.nodeType==1 ) count++;
+      return count;
+    }
+    
+
+    function closeAll(index){
+      var details = document.getElementsByTagName("details").length;
+
+      for(var i=0; i<details; i++){
+        if(i != index){
+          document.getElementsByTagName("details")[i].removeAttribute("open");
+        }
+      }
+    }
+  </script>
+</body>
+</html>
